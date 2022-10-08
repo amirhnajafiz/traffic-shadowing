@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # installing gor on your local system
-# for macOS
 curl https://github.com/buger/goreplay/archive/refs/tags/v2.0.0-rc2.tar.gz -O -J -L
 
 # unzip the downloaded file
