@@ -16,6 +16,9 @@ mkdir /usr/local/bin/gor
 # shellcheck disable=SC2164
 cd goreplay-2.0.0-rc2
 
+# build golang executable file
+go build -o ./gor
+
 # move the files to bin
 # shellcheck disable=SC2035
 mv * /usr/local/bin/gor
