@@ -19,3 +19,9 @@ cd goreplay-2.0.0-rc2
 # move the files to bin
 # shellcheck disable=SC2035
 mv * /usr/local/bin/gor
+
+# shellcheck disable=SC2103
+cd ..
+
+# remove empty directory
+rm -rf goreplay-2.0.0-rc2
