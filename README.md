@@ -1,3 +1,7 @@
+<center>
+<img src="assets/logo.png" width="500" />
+</center>
+
 <h1 align="center">
     Traffic Shadowing
 </h1>
