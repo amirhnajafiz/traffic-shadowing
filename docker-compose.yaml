@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  go-server-1:
+    container_name: echo-server-1
+    restart: always
+    build:
+      dockerfile: package/build/Dockerfile
+      args:
+        HTTP_PORT: "8080"
+    ports:
+      - "8080:8080"
+  go-server-2:
+    container_name: echo-server-2
+    restart: always
+    build:
+      dockerfile: package/build/Dockerfile
+      args:
+        HTTP_PORT: "8081"
+    ports:
+      - "8081:8081"
