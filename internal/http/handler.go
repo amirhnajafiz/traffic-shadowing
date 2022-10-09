@@ -14,7 +14,7 @@ type Handler struct{}
 // HandleGetRequests
 // handling user get requests.
 func (h *Handler) HandleGetRequests(ctx echo.Context) error {
-	log.Printf("user %s", ctx.RealIP())
+	log.Printf("user %s", ctx.Request().RemoteAddr)
 
 	return ctx.NoContent(http.StatusNoContent)
 }
