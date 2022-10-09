@@ -18,6 +18,13 @@ func main() {
 		panic(fmt.Errorf("must give the port argument"))
 	}
 
+	f, err := os.OpenFile("logs"+os.Args[1]+".txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	if err != nil {
+		panic(fmt.Errorf("creating log file failed: %w", err))
+	}
+
+	log.SetOutput(f)
+
 	h := http.Handler{}
 	app := echo.New()
 
