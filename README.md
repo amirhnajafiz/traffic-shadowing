@@ -6,6 +6,12 @@
     Traffic Shadowing
 </h1>
 
+<p align="center">
+<img src="https://img.shields.io/badge/version-1.0.0-black?style=for-the-badge&logo=github" />
+<img src="https://img.shields.io/badge/Go-19+-9cf?style=for-the-badge&logo=go" />
+<img src="https://img.shields.io/badge/build-pass-green?style=for-the-badge&logo=appveyor" />
+</p>
+
 Using **Goreplay** to shadow http service traffic. (with Docker container example)
 
 **Gor** is an open-source tool for 
